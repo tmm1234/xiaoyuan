@@ -1,0 +1,260 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园便捷服务 - 代取快递/代买饭/紧急代办</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 25px 20px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            margin-bottom: 25px;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #7f8c8d;
+            font-size: 16px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 18px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .card-title i {
+            margin-right: 12px;
+            color: #3498db;
+            font-size: 22px;
+        }
+        
+        .service-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        
+        .service-item:last-child {
+            border-bottom: none;
+        }
+        
+        .service-name {
+            font-size: 16px;
+            color: #34495e;
+        }
+        
+        .service-price {
+            font-weight: 600;
+            color: #e74c3c;
+        }
+        
+        .contact-buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-call {
+            background: #2ecc71;
+            color: white;
+        }
+        
+        .btn-wechat {
+            background: #1abc9c;
+            color: white;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .note {
+            background: #fff9e6;
+            border-left: 4px solid #ffcc00;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .service-time {
+            text-align: center;
+            background: #34495e;
+            color: white;
+            padding: 12px;
+            border-radius: 12px;
+            margin-top: 15px;
+            font-size: 15px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>校园便捷服务</h1>
+            <p>省时省力，专注重要事务</p>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">
+                <i class="fas fa-concierge-bell"></i>
+                <span>服务项目与价格</span>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-name">代取快递</div>
+                <div class="service-price">2元/件</div>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-name">代买饭</div>
+                <div class="service-price">2元/次</div>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-name">文件打印+送货上门</div>
+                <div class="service-price">2元/次</div>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-name">紧急代办服务</div>
+                <div class="service-price">价格细谈</div>
+            </div>
+            
+            <div class="service-time">
+                <i class="far fa-clock"></i> 服务时间: 8:00 - 22:00
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">
+                <i class="fas fa-map-marked-alt"></i>
+                <span>服务范围</span>
+            </div>
+            <p style="color: #555; line-height: 1.8;">覆盖整个校园区域，包括：学生宿舍、教学楼、图书馆、体育场、食堂等所有区域。</p>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">
+                <i class="fas fa-phone-alt"></i>
+                <span>联系方式</span>
+            </div>
+            
+            <div class="contact-buttons">
+                <a href="tel:13323919047" class="btn btn-call">
+                    <i class="fas fa-phone"></i> 一键呼叫
+                </a>
+                
+                <button onclick="copyWechat()" class="btn btn-wechat">
+                    <i class="fab fa-weixin"></i> 复制微信号
+                </button>
+            </div>
+            
+            <div class="note">
+                <p><i class="fas fa-exclamation-circle"></i> <strong>添加微信时请备注：</strong>"校园代买"</p>
+                <p><i class="fas fa-info-circle"></i> <strong>服务流程：</strong>添加微信 → 说明需求 → 确定送达时间 → 享受服务</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2023 校园便捷服务 | 快捷方便，省时省力</p>
+        </div>
+    </div>
+
+    <script>
+        function copyWechat() {
+            const text = "13323919047";
+            navigator.clipboard.writeText(text).then(() => {
+                alert('微信号已复制: ' + text + '\n请返回微信添加好友，并备注"校园代买"');
+            }).catch(err => {
+                alert('复制失败，请手动复制微信号: ' + text);
+            });
+        }
+        
+        // 添加点击效果
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('touchstart', function() {
+                this.style.transform = 'scale(0.98)';
+            });
+            
+            btn.addEventListener('touchend', function() {
+                this.style.transform = '';
+            });
+        });
+
